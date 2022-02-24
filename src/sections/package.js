@@ -249,12 +249,12 @@ export default function Package() {
     if (plan === "annual") {
       setState({
         active: "annual",
-        pricingPlan: "annual",
+        pricingPlan: annual,
       });
     } else {
       setState({
         active: "monthly",
-        pricingPlan: "monthly",
+        pricingPlan: monthly,
       });
     }
   };

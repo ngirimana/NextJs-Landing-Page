@@ -28,7 +28,12 @@ export default function PriceCard({
           <span>/Monthly</span>
         </Text>
         <Box style={styles.buttonGroup}>
-          <Button variant="primary" arial-label={buttonText}>{ buttonText}</Button>
+          <Button variant="primary" arial-label={buttonText}>{buttonText}</Button>
+          {anotherOption &&
+            (<Button variant="textButton" className="free_trial" arial-label={anotherOption} sx={{color:'black'}}>
+            {anotherOption}
+            </Button>)
+          }
         </Box>
       </Box>
     </Card>
