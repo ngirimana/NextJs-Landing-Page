@@ -101,13 +101,20 @@ const carouselParams = {
 
 export default function TestimonialCard() {
   return (
-    <section id="testimonial" sx={{ variant: "section.testimonial" }}>
+    <section id="testimonial"
+      sx={{ variant: "section.testimonial" }}
+    >
       <Container css={{ textAlign: "center" }}>
         <SectionHeader slogan="Testimonials" title="Meet Client Satisfaction" />
-        <Box sx={styles.carouselWrapper}>
+        <Box
+          // sx={styles.carouselWrapper}
+        >
           <Carousel {...carouselParams}>
             {data.map((item) => (
-              <Box sx={styles.reviewCard} key={item.sliderClass}>
+              <Box
+                sx={styles.reviewCard}
+                key={item.sliderClass}
+              >
                 <Rating rating={item.review} />
                 <Heading as="h3" sx={styles.title}>
                   {item.title}
